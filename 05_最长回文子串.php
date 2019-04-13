@@ -26,8 +26,6 @@ class Solution {
                 $start = $i;
                 $len   = $j - $i+1;
                 if($string[$j]==$string[$i] && $len >=$maxPalindromeLen){
-                    $k= $i;
-                    $l =$j; 
                     for($k= $i,$l=$j;$k<=$l; $k++,$l --){
                         if($string[$k]==$string[$l]){
                             if($k==$l || $l-$k ==1){
